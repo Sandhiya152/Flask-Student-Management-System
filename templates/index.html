@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Student Management System</h1>
+<br>
+<a href="/students">View Students</a>
+
+<form method="POST" action="/add">
+
+    <label>Name:</label><br>
+    <input type="text" name="name"><br><br>
+
+    <label>Department:</label><br>
+    <input type="text" name="department"><br><br>
+
+    <label>Year:</label><br>
+    <input type="number" name="year"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email"><br><br>
+
+    <input type="submit" value="Add Student">
+
+</form>
+
+</body>
+</html>
